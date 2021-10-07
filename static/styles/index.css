@@ -1,0 +1,368 @@
+:root{
+    --chosen-font: "helvetica";
+}
+
+
+*, body{
+    box-sizing: border-box;
+    padding: 0px; 
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+.container{
+    position: relative;
+    padding: 10px;
+}
+
+.hamburger{
+    display: none;
+}
+
+.homepage{
+    background-image: url('../YolaWebsite-Media/YolisNubeDogGrooming.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100vw; 
+    height: 100vh;
+}
+
+.homepage-content-container{
+    background-color: black;
+
+   
+    margin-left: 50vw;
+    width: 50vw; 
+    height: 100vh; 
+}
+
+
+.web-title{
+    color: aliceblue;
+    font-size: 75px;
+    font-weight: 400;
+    font-family: sans-serif;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+.homepage-navigation{
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80%;
+}
+
+.homepage-navigation .link{
+
+}
+
+.comment-container{
+
+}
+
+.comment-container .comment-1{
+    
+}
+
+.section-title{
+
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 425px) {
+    body{
+        overflow-y: scroll;
+    }
+    
+    .hamburger{
+        display: block;
+        width: 10vw;
+    }
+
+    .homepage{
+        background-image: url('../YolaWebsite-Media/YolisNubeDogGroomingClear.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .homepage-content-container{
+        height: 100vh; 
+        width: 100vw;
+        margin-left: 0px;
+        margin-right: 0px;
+        background-color: rgba(1, 1, 1, 0);
+        padding: 10px;
+    }
+
+    .web-title{
+        color: black;
+        font-size: 25px;
+        font-weight: 400;
+        font-family: sans-serif;
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 95vw;
+    }
+
+    .homepage-navigation{
+        display: flex;
+        width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        padding: 10px;
+    }
+    
+    .homepage-navigation .link{
+        color: black;
+        font-size: 15px;
+        font-weight: 400;
+        font-family: sans-serif;
+        text-align: center;    
+
+        padding: 5px;
+    }
+
+    .comment-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .comment-container span{
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: sans-serif;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .comment-container span:first-of-type{
+        font-size: 16px;
+        font-weight: 500;
+        font-family: sans-serif;
+        padding: 10px;
+        text-align: right;
+    }
+
+    .comment-container span::before{
+        content: "\"";
+        font-size: 20px;
+        font-weight: 500;
+        color: grey;
+    }
+
+    .comment-container span::after{
+        content: "\"";
+        font-size: 20px;
+        font-weight: 500;
+        color: grey;
+
+    }
+
+    .pricing-container{
+        position: relative;
+        font-family: var(--chosen-font);
+    }
+
+    .section-title{
+        font-size: 25px;
+        font-weight: 400;
+        font-family: sans-serif;
+
+        border-left: 5px solid purple;
+        padding-left: 5px;
+
+    }
+
+    .input-container{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .input-container .upload-container{
+        margin-top: 10px;
+        display: flex; 
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .upload-container img{
+        width: 8vw;
+        margin-right: 10px;
+    }
+
+    input, textarea, button{
+        margin-top: 10px;
+    }
+
+    input, textarea{
+        border: 1px solid grey;
+        padding: 10px;
+        border-radius: 5px;
+        width: 90vw;
+        height: fit-content;
+        font: var(--chosen-font);
+        font-size: 15px;
+        color: grey;
+    }
+
+    #submit-button{
+        
+        width: 75vw;
+        margin-top: 20px;
+        margin-left: 7vw;
+        margin-bottom: 5vh;
+        height: fit-content;
+        padding: 10px;
+
+        background-color: purple;
+        color: white;
+        font: var(--chosen-font);
+        font-size: 15px;
+
+        border-radius: 30px;
+        border: none;
+
+
+    }
+
+    .follow-up-description{
+        text-align: center;
+        line-height: 20px;
+        font-family: var(--chosen-font);
+        font-size: 14px;
+        color: grey;
+
+        margin-top: 10px;
+    }
+
+    .about-me-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    .about-me-container .left-content{
+        background-color: white;
+        width: 100vw;
+        height: 30vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+
+    }
+
+    .circle-frame{
+        width: 50%;
+
+        text-align: center;
+        position: relative;
+        padding-bottom: 50% ;
+
+        border-radius:50%;
+        overflow: hidden;
+
+        border: 1px solid rgba(1, 0, 0, .25);
+    }
+
+    .about-me-image{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+
+    .about-me-container .right-content{
+        width: 100vw;
+        height: 70vh;
+        overflow-y: hidden;
+        
+        color: white;
+
+        padding: 10px;
+        background-color: white;
+        
+    }
+
+    .about-me-description{
+
+        color:black;
+
+        margin-top: 10px;
+
+        font-family: var(--chosen-font);
+        font-size: 20px;
+        font-weight: 500;
+
+        line-height: 28px;
+       
+        text-align: justify;
+
+
+    }
+
+    .our-puppy-clients-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    .our-puppy-clients-container .left-content{
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .our-puppy-clients-container .right-content{
+        background-color: white;
+        width: 100vw;
+        height: 75vh;
+
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+    }
+
+
+}
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/index.css') }}" />
+    <title>Yolis Nube Grooming</title>
+</head>
+<body>
+    
+    <section class="homepage">
+
+        <div class="homepage-content-container">
+
+        </div>
+
+
+
+    </section>
+
+    <div class="container">
+        <!-- Web Title -->
+        <div class="web-title" > 
+            <span>Yolis and Nube Dog Grooming</span>
+            <img class="hamburger" src="../static/YolaWebsite-Media/hamburger.png" alt="hamburger">
+        </div>
+
+        <!-- Navigation -->
+        <div class="homepage-navigation">
+            <div class="link">About Me</div>
+            <div class="link">Our Puppy Clients</div>
+            <div class="link">Make An Appointment</div>
+        </div>
+
+        <!--Quotes-->
+        <div class="comment-container">
+            <span>
+                Dogs are like our family, so we treat them like family
+            </span>
+            <span>
+                Nuestros perros son como familia, y los tratamos como familia
+            </span>         
+        </div>
+        <br>
+
+        <!-- Pricing container-->
+        <div class="pricing-container">
+            <div class="section-title">
+                How We Price
+            </div><br>
+            <div class="pricing-content">
+                We start with the following base prices: <br> <br>
+                1. Small dog, $50 <br>
+                2. Medium dog, $60 <br> <br>
+                *Includes bathing, nail clipping, and cut. <br> <br>
+                Note: For dogs with matted coats, fleas, ticks, or any 
+                other issue, we will charge an extra fee.  <br> 
+                <br>
+                If your dog is extremely unwilling and misbehaves,
+                we reserve the right to refuse service and will 
+                have you pick up the dog.
+            </div>
+        </div> <br>
+        
+        <!-- Make Appointment Section -->
+        <div class="make-appointment-container">
+            <div class="section-title">
+                Make An Appointment
+            </div>
+            
+            <div class="input-container">
+                
+                <input id="name-input" type="text" placeholder="Name">
+                <input id="email-input" type="text" placeholder="Email">
+                
+                <div style="margin-top: 10px;">Or</div>
+                <input id="phone-number" type="text" placeholder="Phone Number">
+                <div class="upload-container"> <img src="../static/YolaWebsite-Media/upload-button.png" alt="upload-btn" > Upload image of your dog</div>
+                <textarea name="notes" id="notes" cols="30" rows="10">Notes</textarea>
+            </div>
+
+            <div class="follow-up-description">
+                After receiving your information, we will contact you within <span style="border-bottom: 2px solid black;"> one day</span> 
+                to discuss the time and price of your puppy
+            </div>
+            <button id="submit-button">Submit</button>
+
+            
+
+        </div>
+        
+        <!-- About Me Container-->
+        <div class="about-me-container">
+                    
+            <div class="left-content">
+                <div class="section-title">
+                    About Me
+                </div>
+                <div class="circle-frame">
+                    <img class= "about-me-image" src="../static/YolaWebsite-Media/AboutMe-Yola.jpg" alt="yolanda gonzalez">
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="about-me-description">
+                    Hi, 
+                    <br> <br>
+                    I’m Yolanda and I am passionate groomer who loves taking care of and grooming dogs. I found my passion for dog grooming when I first gave my dog, Nube, a bath and realized how much fun this could be. I turned my interest into a hobby that I now have turned into a small business. With your support, I hope to continue to grow and take care of your puppies.<br>
+                    <br>
+                    We welcome all dogs, no matter how matted or dirty. We just want to see you and your puppy happy :)
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Puppy clients container -->
+        <div class="our-puppy-clients-container">
+            
+            <div class="left-content">
+                <div class="section-title" >
+                    Our Puppy Clients
+                </div>
+
+                <div class="circle-frame">
+                    <img class= "about-me-image" src="../static/YolaWebsite-Media/Nube.jpg" alt="yolanda gonzalez">
+                </div>
+            </div>
+
+            <div class="right-content">
+                <!-- Add Pictures here! -->
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        hello
+    </footer>
+    
+
+
+    <script src="{{ url_for('static', filename='index.js')}}"> </script>
+</body>
+</html>
